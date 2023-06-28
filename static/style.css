@@ -1,0 +1,154 @@
+body{
+    padding: 0;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    
+
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/Batman_Logo_in_Black_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-duration: 10s ;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards ;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out ;
+}
+
+
+@keyframes animate{
+    0%{ background-image: url('../static/img/joshua-sortino-LqKhnDzSF-8-unsplash.jpg');}
+    33%{ background-image: url('../static/img/Joker_2019_Film_7K_Wallpaper.jpg');}
+    66%{ background-image: url('../static/img/Smoking_Joker_Batman_Movie_Photo.jpg');}
+    100%{ background-image: url('../static/img/Batman_Logo_in_Black_Background.jpg');}
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white; display: flex; justify-content: space-between;
+    align-items: center ; text-transform: uppercase;
+
+}
+nav .logo{
+    width: 25%; text-align: center;
+}
+h3:hover{
+  color: rgb(0, 255, 13);
+}
+
+nav .menu{
+    width: 40%; display: flex; justify-content: space-around;
+    color: white;
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+main{
+   width: 100%;
+   height: 85vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section h3{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1cm;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px black ;
+}
+
+
+section a{
+    padding: 12px, 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+section .btnone{
+    background-color: white;
+    color: black;
+    
+}
+
+.content_change{
+    content: '';
+    animation: changetext 10s infinite linear;
+
+}
+
+.hello{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+    
+}
+body{
+    overflow-x: hidden;
+}
+.burger div {
+    display: none;
+    cursor: pointer;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+       position: absolute  ;
+       right: 0px;
+       height: 92vh;
+       width: 5%;
+       display: flex;
+       top: 8vh;
+       flex-direction: column;
+       align-items: center;
+      transform: translateX(100%);
+      transition: 1s ease-in;
+      background-color: rgba(0, 0, 0, 0.295);
+      
+    }
+    .burger div
+    {
+        display: block;
+    }
+    .active{
+        transform: translateX(0%);
+    }
+  
+}
+
